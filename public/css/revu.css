@@ -1,0 +1,34 @@
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: minmax(100px,3);
+}
+
+.header{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #e97827;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.content{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: rgb(233, 120, 39);
+ grid-row-start: 2;
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+.footer{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: rgb(141, 61, 4);
+ grid-row-start: 3;
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+.navbar-custom {
+  background-color: #0054A1;
+}
