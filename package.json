@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "./node_modules/.bin/webpack",
-    "start": "yarn build && ./node_modules/.bin/webpack-dev-server"
+    "start": "gulp && yarn build && ./node_modules/.bin/webpack-dev-server"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
