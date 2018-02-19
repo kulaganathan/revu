@@ -7,7 +7,7 @@ export default class Footer extends Component {
 
   render() {
     return (
-    <Navbar className="navbar-custom">
+    <Navbar fixedBottom className="navbar-custom">
       <Navbar.Header>
         <Navbar.Brand>KS - RevU Footer</Navbar.Brand>
       </Navbar.Header>

@@ -1,20 +1,43 @@
 
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Image} from 'react-bootstrap';
+import {Form, FormGroup, FormControl, ControlLabel, Col, Button} from 'react-bootstrap';
 
 export default class CenterContent extends Component {
 
   render() {
     return (
-    <p className="content-center">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-      It has survived not only five centuries, but also the leap into electronic typesetting, 
-      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-      sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-      Aldus PageMaker including versions of Lorem Ipsum.
-    </p>);
+      <Form horizontal>
+        <FormGroup controlId="taskName">
+          <Col componentClass={ControlLabel} xs={4} md={2}>
+            Task Name:
+          </Col>
+          <Col xs={8} md={4}>
+            <FormControl id="taskName" type="text"></FormControl>
+          </Col>
+        </FormGroup>
+        <FormGroup controlId="timeFrom">
+          <Col componentClass={ControlLabel} xs={4} md={2}>
+            From:
+          </Col>
+          <Col xs={8} md={4}>
+            <FormControl id="timeFrom" type="text"></FormControl>
+          </Col>
+          <Col componentClass={ControlLabel} xs={4} md={2}>
+            To:
+          </Col>
+          <Col xs={8} md={4}>
+            <FormControl id="timeFrom" type="text"></FormControl>
+          </Col>
+        </FormGroup>
+        <FormGroup controlId="taskName">
+          <Col componentClass={ControlLabel} xs={4} md={2}>
+          </Col>
+          <Col xs={8} md={4}>
+          <Button type="submit">Submit</Button>
+          </Col>
+        </FormGroup>
+      </Form>
+     );
   }
 }
